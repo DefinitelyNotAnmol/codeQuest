@@ -3,12 +3,22 @@ body {
 }
 
 .youtube-video {
-    display: flex;
     margin-top: 75px;
 }
 
 iframe {
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
+    z-index: 3;
+    position: absolute;
+}
+
+img {
+    position: absolute;
+}
+
+.key {
+    z-index: 1;
+}
+
+.cover {
+    z-index: 2;
 }
