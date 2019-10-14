@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'MDTall';
+    src: url('MDTall.ttf');
+}
+
+.title {
+    margin-top: 50px;
+    font-family: MDTall;
+    font-size: 50pt;
+    text-align: center;
+}
+
+.code {
+    margin-top: 50px;
+    font-family: MDTall;
+    font-size: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.code td {
+    padding: 10px 5px;
+}
