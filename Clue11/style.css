@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+.youtube-video {
+    display: flex;
+    margin-top: 75px;
+}
+
+iframe {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
