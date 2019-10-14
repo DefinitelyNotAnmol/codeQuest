@@ -3,6 +3,11 @@
     src: url('MDTall.ttf');
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 .title {
     margin-top: 50px;
     font-family: MDTall;
