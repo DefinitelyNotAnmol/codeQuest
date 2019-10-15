@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'MDTall';
+    src: url('MDTall.ttf');
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: MDTall;
+    font-size: 100px;
+    text-align: center;
+}
