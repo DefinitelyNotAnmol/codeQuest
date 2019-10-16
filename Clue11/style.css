@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.container {
+/* .container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -10,6 +10,7 @@ body {
 
 .youtube-video {
     margin-top: 75px;
+    text-align: center;
 }
 
 iframe {
@@ -26,5 +27,37 @@ img {
 }
 
 .cover {
+    z-index: 2;
+} */
+
+.container {
+    margin-top: 75px;
+    position: relative;
+}
+
+.video {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 3;
+}
+
+.key {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.cover {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
     z-index: 2;
 }
