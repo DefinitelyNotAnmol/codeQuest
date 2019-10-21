@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>CDQST | ACE</title>
 	<meta charset="UTF-8">
@@ -9,11 +10,16 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
+
 </head>
+
 <body>
 
+	<div style="text-align: center;">
+		<a href="https://wa.me/14155238886?text=join%20raise-position" target="_blank" class="twilio">click me</a>
+	</div>
 
-	<div class="container">
+	<div class="container" style="display: none">
 		<div class="wrap">
 			<form class="form validate-form">
 				<span class="form-title">
@@ -22,14 +28,15 @@
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100">Your Phone Number</span>
-					<input class="input100" type="text" name="number" placeholder="Enter you phone number">
+					<input class="input100" type="text" name="number" id="number" placeholder="Enter you phone number"
+						required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-form-btn">
 					<div class="wrap-form-btn">
 						<div class="form-bgbtn"></div>
-						<button class="form-btn">
+						<button class="form-btn" type="button" onclick="send()">
 							<span>
 								Submit
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
@@ -40,8 +47,36 @@
 			</form>
 		</div>
 	</div>
+	<script src="js/jquery.js"></script>
 
+	<script>
+		function send() {
+			console.log('gg');
+			var request = new XMLHttpRequest()
+			number = document.getElementById("number");
+			console.log(number)
+			url = "https://radiant-george-7.herokuapp.com/cdqst/" + number.value
+			console.log(url)
+			request.open('GET', url, true)
+			// request.onload = function() {
+			// // Begin accessing JSON data here
+			// }
+			request.send()
+
+		}
+		$(document).ready(function () {
+			$(".twilio").click(function () {
+				$(".container").toggle();
+				$(".twilio").toggle();
+			});
+
+			$('#form').submit(function () {
+				console.log('gg');
+			});
+		});
+	</script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
